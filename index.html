@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6ab80108b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Escolha um:</h1>
+      <section id="escolhas">
+        <div id="pedra" class="jokenpo jokenpo-box">
+          <i class="fa-regular fa-hand-back-fist fa-10x"></i>
+        </div>
+        <div id="papel" class="jokenpo jokenpo-box">
+          <i class="fa-regular fa-hand fa-10x"></i>
+        </div>
+        <div id="tesoura" class="jokenpo jokenpo-box">
+          <i class="fa-regular fa-hand-scissors fa-10x"></i>
+        </div>
+      </section>
+      <p id="versus" class="hidden">VS</p>
+      <div id="aiChoice" class="hidden">
+        <i class=""></i>
+      </div>
+      <p id="results"></p>
+      <div id="buttons">
+        <button id="jogar">Jogar</button>
+        <button id="restart" disabled>Resetar</button>
+      </div>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
