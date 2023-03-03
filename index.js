@@ -35,7 +35,6 @@ const atualizarEscolha = (evt) => {
       break;
     default:
       window.alert("Error");
-      console.log(currentChoice);
       break;
   }
 };
@@ -83,7 +82,6 @@ const play = () => {
       const aiResponse = response.ai.name;
       switch (aiResponse) {
         case "rock":
-          console.log(aiResponse);
           aiChoice.firstElementChild.classList.add(
             "fa-regular",
             "fa-hand-back-fist",
@@ -91,7 +89,6 @@ const play = () => {
           );
           break;
         case "paper":
-          console.log(aiResponse);
           aiChoice.firstElementChild.classList.add(
             "fa-regular",
             "fa-hand",
@@ -99,7 +96,6 @@ const play = () => {
           );
           break;
         case "scissors":
-          console.log(aiResponse);
           aiChoice.firstElementChild.classList.add(
             "fa-regular",
             "fa-hand-scissors",
@@ -108,11 +104,9 @@ const play = () => {
           break;
         default:
           window.alert("Error");
-          console.log(aiResponse);
           break;
       }
       resetar.removeAttribute("disabled");
-      console.log(response);
     })
     .catch((err) => console.error(err));
   jogar.setAttribute("disabled", "true");
